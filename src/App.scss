@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass");
+
+.container {
+  display: flex;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.tags-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+  width: 480px;
+  padding: 0 8px;
+  border: 1px solid rgb(214, 216, 218);
+  border-radius: 6px;
+  &:focus-within {
+    border: 1px solid #0052cc;
+  }
+}
+
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.tag {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+  list-style: none;
+  border-radius: 6px;
+  margin: 0 8px 8px 0;
+  .tag-title {
+    margin-top: 3px;
+  }
+  .tag-close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+  }
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.container_options {
+  border: 0.5px solid black;
+  position: absolute;
+  width: 495px;
+  transition: all 0.3s ease-in-out;
+
+  ul {
+    list-style: none;
+    padding-left: 5px;
+
+    div {
+      width: 4rem;
+      margin: 2px 4px;
+    }
+  }
+  li {
+    margin: 7px 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
